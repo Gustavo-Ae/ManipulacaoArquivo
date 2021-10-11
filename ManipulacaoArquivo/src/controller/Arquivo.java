@@ -17,7 +17,11 @@ public class Arquivo {
         
         FileWriter escreverArquivo = new FileWriter(arquivo);
         
-        escreverArquivo.write("Hello World");
+        for(int posicao = 1;posicao <= 10;posicao++){
+            escreverArquivo.write("Minha "+posicao+"º linha \n");
+        }
+        
+        
         escreverArquivo.flush();
         escreverArquivo.close();
         
