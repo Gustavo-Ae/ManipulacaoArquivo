@@ -1,16 +1,2 @@
-------------- Lista de Funcionários ------------- 
-
-CPF: 397.945.603-08
-Nome: Isabelle Eloá Mirella Porto
-Email: iisabelleeloamirellaporto@agaxtur.com.br
-Idade: 25 anos 
-Salário: R$ 1.850,00
-Horas Extras: null
-----------------------------------------
-CPF: 754.415.387-83
-Nome: Sebastião Levi Augusto Assunção
-Email: sebastiaoleviaugustoassuncao__sebastiaoleviaugustoassuncao@portoweb.com.br
-Idade: 50 anos 
-Salário: R$ 6.000,00
-Horas Extras: null
-----------------------------------------
+397.945.603-08;Isabelle Eloá Mirella Porto;iisabelleeloamirellaporto@agaxtur.com.br;25;R$ 1.850,00;null
+754.415.387-83;Sebastião Levi Augusto Assunção;sebastiaoleviaugustoassuncao__sebastiaoleviaugustoassuncao@portoweb.com.br;50;R$ 6.000,00;null
