@@ -14,7 +14,7 @@ import model.bean.Pessoa;
 public class LerArquivo {
     public static void main(String[] args) throws FileNotFoundException {
         
-        FileInputStream entradaArquivo = new FileInputStream(new File("C:\\Users\\Josiene\\Documents\\NetBeansProjects\\ManipulacaoArquivo\\ManipulacaoArquivo\\src\\armazenaArquivosTXT\\listaFuncionario.txt"));
+        FileInputStream entradaArquivo = new FileInputStream(new File("C:\\Users\\Josiene\\Documents\\NetBeansProjects\\ManipulacaoArquivo\\ManipulacaoArquivo\\src\\armazenaArquivosTXT\\listaFuncionario.csv"));
                 
         Scanner lerArquivo = new Scanner(entradaArquivo,"UTF-8");
         

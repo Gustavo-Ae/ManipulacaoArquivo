@@ -38,7 +38,7 @@ public class Arquivo {
         
         
         
-        File arquivo = new File("C:\\Users\\Josiene\\Documents\\NetBeansProjects\\ManipulacaoArquivo\\ManipulacaoArquivo\\src\\armazenaArquivosTXT\\listaFuncionario.txt");
+        File arquivo = new File("C:\\Users\\Josiene\\Documents\\NetBeansProjects\\ManipulacaoArquivo\\ManipulacaoArquivo\\src\\armazenaArquivosTXT\\listaFuncionario.csv");
         
         if(!arquivo.exists()){
             arquivo.createNewFile();
