@@ -22,4 +22,10 @@ public class Funcionario extends Pessoa{
     public void setHorasExtras(Integer horasExtras) {
         this.horasExtras = horasExtras;
     }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" + "salario=" + salario + ", horasExtras=" + horasExtras + '}';
+    }
+    
 }
