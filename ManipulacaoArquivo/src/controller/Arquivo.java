@@ -46,17 +46,14 @@ public class Arquivo {
         
         FileWriter escreverArquivo = new FileWriter(arquivo);
         
-        escreverArquivo.write("------------- Lista de Funcionários ------------- \n");
         
         for(Funcionario f:listaFuncionario){
-            escreverArquivo.write("\n");
-            escreverArquivo.write("CPF: "+f.getCpf()+"\n");
-            escreverArquivo.write("Nome: "+f.getNome()+"\n");
-            escreverArquivo.write("Email: "+f.getEmail()+"\n");
-            escreverArquivo.write("Idade: "+f.getIdade()+" anos \n");
-            escreverArquivo.write("Salário: "+f.getSalario()+"\n");
-            escreverArquivo.write("Horas Extras: "+f.getHorasExtras()+"\n");
-            escreverArquivo.write("----------------------------------------");
+            escreverArquivo.write(f.getCpf()+";");
+            escreverArquivo.write(f.getNome()+";");
+            escreverArquivo.write(f.getEmail()+";");
+            escreverArquivo.write(f.getIdade()+";");
+            escreverArquivo.write(f.getSalario()+";");
+            escreverArquivo.write(f.getHorasExtras()+"\n");
         }
         
         
