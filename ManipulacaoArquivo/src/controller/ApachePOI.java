@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import javafx.scene.control.Cell;
+import org.apache.poi.ss.usermodel.Cell;
 import javax.swing.JOptionPane;
 import model.bean.Funcionario;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
@@ -56,22 +56,22 @@ public class ApachePOI{
             
             int celula = 0;
             
-            org.apache.poi.ss.usermodel.Cell celulaCPF = linhaPlanilha.createCell(celula++);
+            Cell celulaCPF = linhaPlanilha.createCell(celula++);
             celulaCPF.setCellValue(f.getCpf());
             
-            org.apache.poi.ss.usermodel.Cell celulaNome = linhaPlanilha.createCell(celula++);
+            Cell celulaNome = linhaPlanilha.createCell(celula++);
             celulaNome.setCellValue(f.getNome());
              
-            org.apache.poi.ss.usermodel.Cell celulaEmail = linhaPlanilha.createCell(celula++);
+            Cell celulaEmail = linhaPlanilha.createCell(celula++);
             celulaEmail.setCellValue(f.getEmail());
             
-            org.apache.poi.ss.usermodel.Cell celulaIdade = linhaPlanilha.createCell(celula++);
+            Cell celulaIdade = linhaPlanilha.createCell(celula++);
             celulaIdade.setCellValue(f.getIdade());
              
-            org.apache.poi.ss.usermodel.Cell celulaSalario = linhaPlanilha.createCell(celula++);
+            Cell celulaSalario = linhaPlanilha.createCell(celula++);
             celulaSalario.setCellValue(f.getSalario());
             
-            org.apache.poi.ss.usermodel.Cell celulaHoraExtra = linhaPlanilha.createCell(celula++);
+            Cell celulaHoraExtra = linhaPlanilha.createCell(celula++);
             celulaHoraExtra.setCellValue(String.valueOf(f.getHorasExtras()));
            
         }
