@@ -46,13 +46,13 @@ public class ApachePOI{
             arquivo.createNewFile();
         }
         
-        HSSFWorkbook escreverNaPlanilha = new HSSFWorkbook();
+        HSSFWorkbook HSSFWorkbook = new HSSFWorkbook();
         
-        HSSFSheet linhaFuncionario = escreverNaPlanilha.createSheet("Planilha de Funcionários");
+        HSSFSheet planilha = HSSFWorkbook.createSheet("Planilha de Funcionários");
         
         int numeroLinha = 0;
         for(Funcionario f:listaFuncionario){
-            Row linhaPlanilha = linhaFuncionario.createRow(numeroLinha++);
+            Row linhaPlanilha = planilha.createRow(numeroLinha++);
             
             int celula = 0;
             
@@ -77,13 +77,13 @@ public class ApachePOI{
         }
         
         for(int linha = 0; linha <= 7;linha++){ /*Ajusta a largura da coluna*/
-            linhaFuncionario.autoSizeColumn(linha);
+            planilha.autoSizeColumn(linha);
         }
         
         
         
         FileOutputStream saida = new FileOutputStream(arquivo);
-        escreverNaPlanilha.write(saida);
+        HSSFWorkbook.write(saida);
         saida.flush();
         saida.close();
         
