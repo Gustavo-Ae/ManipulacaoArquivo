@@ -61,20 +61,26 @@ public class ApachePOI{
             
             org.apache.poi.ss.usermodel.Cell celulaNome = linhaPlanilha.createCell(celula++);
             celulaNome.setCellValue(f.getNome());
-            
+             
             org.apache.poi.ss.usermodel.Cell celulaEmail = linhaPlanilha.createCell(celula++);
             celulaEmail.setCellValue(f.getEmail());
             
             org.apache.poi.ss.usermodel.Cell celulaIdade = linhaPlanilha.createCell(celula++);
             celulaIdade.setCellValue(f.getIdade());
-            
+             
             org.apache.poi.ss.usermodel.Cell celulaSalario = linhaPlanilha.createCell(celula++);
             celulaSalario.setCellValue(f.getSalario());
             
             org.apache.poi.ss.usermodel.Cell celulaHoraExtra = linhaPlanilha.createCell(celula++);
             celulaHoraExtra.setCellValue(String.valueOf(f.getHorasExtras()));
-            
+           
         }
+        
+        for(int linha = 0; linha <= 7;linha++){ /*Ajusta a largura da coluna*/
+            linhaFuncionario.autoSizeColumn(linha);
+        }
+        
+        
         
         FileOutputStream saida = new FileOutputStream(arquivo);
         escreverNaPlanilha.write(saida);
