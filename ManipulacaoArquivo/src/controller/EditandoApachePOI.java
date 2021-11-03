@@ -3,9 +3,9 @@ package controller;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.Iterator;
-import java.util.Scanner;
 import javax.swing.JOptionPane;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -48,12 +48,19 @@ public class EditandoApachePOI{
             }
         }
         entrada.close();
+
+        try {
+            FileOutputStream saida = new FileOutputStream(arquivo);
         
-        FileOutputStream saida = new FileOutputStream(arquivo);
-        
-        HSSFWorkbook.write(saida);
-        saida.flush();
-        saida.close();
+            HSSFWorkbook.write(saida);
+            saida.flush();
+            saida.close();
+        } catch(FileNotFoundException e){
+            if(e.getMessage().contains("O arquivo já está sendo usado por outro processo")){
+                JOptionPane.showMessageDialog(null, "O Excel está aberto , feche antes de fazer alguma modificação","Aviso",JOptionPane.INFORMATION_MESSAGE);
+                return;
+            }
+        }
         
         JOptionPane.showMessageDialog(null, "Planilha atualizada!","Aviso",JOptionPane.INFORMATION_MESSAGE);
     }
