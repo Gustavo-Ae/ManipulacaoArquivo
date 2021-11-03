@@ -1,6 +1,7 @@
 package controller.JSON;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -35,7 +36,10 @@ public class escreverJSON {
         listaFuncionario.add(atendente);
         listaFuncionario.add(engenheiro);
         
-        String jsonUsuarios = new Gson().toJson(listaFuncionario); //passa para JSON
+        
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        
+        String jsonUsuarios = gson.toJson(listaFuncionario); //passa para JSON
         
         System.out.println(jsonUsuarios);
         

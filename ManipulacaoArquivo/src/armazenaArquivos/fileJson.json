@@ -1,1 +1,16 @@
-[{"salario":"R$ 1.850,00","cpf":"397.945.603-08","nome":"Isabelle Eloá Mirella Porto","email":"iisabelleeloamirellaporto@agaxtur.com.br","idade":"25"},{"salario":"R$ 6.000,00","cpf":"754.415.387-83","nome":"Sebastião Levi Augusto Assunção","email":"sebastiaoleviaugustoassuncao__sebastiaoleviaugustoassuncao@portoweb.com.br","idade":"50"}]
+[
+  {
+    "salario": "R$ 1.850,00",
+    "cpf": "397.945.603-08",
+    "nome": "Isabelle Eloá Mirella Porto",
+    "email": "iisabelleeloamirellaporto@agaxtur.com.br",
+    "idade": "25"
+  },
+  {
+    "salario": "R$ 6.000,00",
+    "cpf": "754.415.387-83",
+    "nome": "Sebastião Levi Augusto Assunção",
+    "email": "sebastiaoleviaugustoassuncao__sebastiaoleviaugustoassuncao@portoweb.com.br",
+    "idade": "50"
+  }
+]
